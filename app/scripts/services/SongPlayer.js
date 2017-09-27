@@ -73,7 +73,7 @@
 
         //  @desc Current playback time (in seconds) of currently playing song
         //  @type {Number}
-        // SongPlayer.volume = 66;
+        SongPlayer.volume = 66;
 
         //        @function SongPlayer.play(song)
         //        @desc plays a song from the beginning if the song has not already started and continues playing the song from where it left off if not
@@ -139,11 +139,11 @@
                 }
             };
 
-            // SongPlayer.setVolume = function(volume) {
-            //     if (currentBuzzObject) {
-            //         currentBuzzObject.setVolume(volume);
-            //     }
-            // };
+            SongPlayer.setVolume = function(volume) {
+                if (currentBuzzObject) {
+                    currentBuzzObject.setVolume(volume);
+                }
+            };
         };
 
         return SongPlayer;
